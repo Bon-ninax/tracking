@@ -1,0 +1,16 @@
+# Ultralytics YOLOv5 🚀, AGPL-3.0 license
+# ImageNet-1k dataset https://www.image-net.org/index.php by Stanford University
+# Simplified class names from https://github.com/anishathalye/imagenet-simple-labels
+# Example usage: python classify/train.py --data imagenet
+# parent
+# ├── yolov5
+# └── datasets
+#     └── imagenet  ← downloads here (144 GB)
+
+# Train/val/test sets as 1) dir: path/to/imgs, 2) file: path/to/imgs.txt, or 3) list: [path/to/imgs1, path/to/imgs2, ..]
+train: data/train/images # train images (relative to 'path') 1281167 images
+val: data/valid/images # val images (relative to 'path') 50000 images
+nc: 1# test images (optional)
+
+# Classes
+names: ['cat', 'dog', 'pig', 'dag', 'bird', 'fox', 'ca', 'do', 'pi', 'da', 'bir', 'fo', 'bi', 'fot', 'fog', 'statue of liberty pose']
